@@ -2,7 +2,7 @@
 
 ## Tech Stack:
 - Framework: **FastAPI**
-- Database: **PostgreSQL (ORM: SQLAlchemy)**
+- Database: **PostgreSQL (ORM: Tortoise ORM)**
 - Server: **Uvicorn**
 - Test: **TestClient (in FastAPI) / Tox**
 - Containerization: **Docker**
