@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from pwncore.db.team_model import Team
 from fastapi import APIRouter
 
 # Metadata at the top for instant accessibility
@@ -17,7 +17,9 @@ async def team_list():
 @router.get("/login")
 async def team_login():
     # Do login verification here
-    return {"status": "logged in!"}
+    team = Team(name="test")
+    is_true = await team.check_password("testing")
+    return {"status": is_true}
 
 
 @router.get("/members/{team_id}")

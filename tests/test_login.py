@@ -11,4 +11,4 @@ def test_login():
 
     # Evaluate the response against expected values
     assert response.status_code == 200
-    assert response.json() == {"status": "logged in!"}
+    assert response.json() == {"status": True}
